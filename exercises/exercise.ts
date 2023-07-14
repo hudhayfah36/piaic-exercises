@@ -1,4 +1,3 @@
-
 // 2.
 const personName = "huzaifa";
 console.log(`Hello ${personName}, would you like to learn some Python today?`);
@@ -92,10 +91,142 @@ console.log(`guestList[1] you are still invited, don't worry`);
 // 18.
 const fivePlaces = ["Samarra" , "Al-Basra" , "Iran" , "Palestine" , "Afghanistan" ];
 console.log(fivePlaces);
-console.log(fivePlaces.sort());
-console.log(fivePlaces.reverse())
+const sortedPlaces = fivePlaces.sort();
+console.log(sortedPlaces);
+const reversedPlaces = fivePlaces.reverse();
+console.log(reversedPlaces);
+console.log(fivePlaces);
 
 
 // 19.
+console.log("I am inviting 2 people to dinner");
+
+// 20.
+const languages = ["Arabic","Farsi","Urdu","English"];
+for (let language in languages) {
+    console.log(language);
+};
+
+// 21.
+const languagesObj = {
+    UAE : "Arabic",
+    Iran : "Farsi",
+    Pakistan : "Urdu",
+    London : "English"
+};
 
 
+// 22.
+// Error 
+
+// const arrayWithError = [1,2,3,4];
+// console.log(arrayWithError[4]);
+
+// the above 2 lines will generate an error ::
+
+
+// 23.
+
+let car = "Supra";
+let genOut = car === "Supra" ? "The perfect one" : "Come on Man make your choice better";
+console.log(genOut);
+
+const door = "Wooden";
+const genOut1 = door === "Wooden" ? "Wooden door is the only perfect door" : "wooden door is better than any other door ";
+
+
+// 24.
+const string1 = "huzaif";
+if (string1 === "huzaif") {
+    console.log(`welcome ${string1}`);
+}
+
+const string2 = "Hello world";
+const isLowerCase = string2.toLowerCase() === string2;
+
+if (isLowerCase) { 
+    console.log("The string is in lower case");
+} else {
+    console.log("the string is not in lower case");
+}
+
+const number2 = 12;
+if (number2 === 12){
+    console.log("guessed the right number");
+} else {
+    console.log("sorry you guessed the wrong number");
+}
+
+const number3 = 1;
+if (number3 == 1 || number3 == 12) {
+    console.log("guessed the right number");
+} else {
+    console.log("guessed the wrong number");
+}
+
+const number4 = 32 ;
+if (number4 === 32 && number4 === 23) {
+    console.log("guessed the wrong ");
+} else {
+    console.log("kuch bhi");
+}
+
+
+const firstArray = [3,4,6,7];
+if (firstArray.includes(6)){
+    console.log("the number 6 is in array");
+} else { 
+    console.log("the number 6 is not in array");
+}
+
+if (!firstArray.includes(1)){
+    console.log("the number 1 is not in array");
+} else {
+    console.log("the number 1 is in array");
+}
+
+
+// 25.
+const alienColor = "green";
+if (alienColor === "green") {
+    console.log("player just earned 5 points");
+} else {
+    console.log("");
+}
+
+// 26.
+const alienColor1 = "green";
+if (alienColor1 === "green") {
+    console.log("player just earned 5 points");
+} else {
+    console.log("player just earned 10 points");
+}
+
+
+// 27.
+const alienColor3 = "green";
+
+if (alienColor3 === "green") {
+    console.log("player earned 5 points");
+} else if (alienColor3 === "yellow") { 
+    console.log("player earned 10 points");
+} else if (alienColor3 === "red") {
+    console.log("player earned 15 points");
+}
+
+// 28.
+const personAge = 13;
+
+if (personAge < 2){
+    console.log("you are a baby");
+} else if (personAge > 2 && personAge < 4) {
+    console.log("you are a toddler");
+} else if (personAge > 4 && personAge < 13) {
+    console.log("you are a kid");
+} else if (personAge > 13 && personAge < 20) {
+    console.log("you are a teenager");
+} else if (personAge > 20 && personAge < 65) {
+    console.log("you are an adult");
+} else {
+        console.log("you are an elderly person");
+}

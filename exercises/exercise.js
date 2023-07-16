@@ -198,3 +198,127 @@ else if (personAge > 20 && personAge < 65) {
 else {
     console.log("you are an elderly person");
 }
+// 29.
+var fvrtFruits = ["Mango", "Banana", "Aam", "Kela"];
+if (fvrtFruits.includes("Mango")) {
+    console.log("Hurrah array includes mango ,your fvrt fruit");
+}
+else if (fvrtFruits.includes("Banana")) {
+    console.log("Hurrah array includes banana , your fvrt fruit");
+}
+else if (fvrtFruits.includes("Aam")) {
+    console.log("aam is in your array");
+}
+else if (fvrtFruits.includes("Kela")) {
+    console.log("kela is in your array");
+}
+else {
+    console.log("nahi mojood !!");
+}
+// 30.
+var userNames = ["admin", "user1", "user2", "user3", "user3"];
+for (var i = 0; i < userNames.length; i++) {
+    if (userNames[i] === "admin") {
+        console.log("WELCOME Admin");
+    }
+    else {
+        console.log("hello ".concat(userNames[i], " thank you for logging in again "));
+    }
+}
+// 31.
+var userNames1 = [];
+if (userNames1.length === 0) {
+    console.log("We need some users");
+}
+else {
+    for (var i = 0; i < userNames1.length; i++) {
+        if (userNames1[i] === "admin") {
+            console.log("hello admin");
+        }
+        else {
+            console.log("hello ".concat(userNames1[i]));
+        }
+    }
+}
+// 32.
+var currentUsers = ["user1", "user2", "user3", "user4", "user5"];
+var newUsers = ["users1", "user2", "user6", "user7", "user8"];
+for (var i = 0; i < newUsers.length; i++) {
+    var newUserName = newUsers[i];
+    var isDuplicate = false;
+    for (var j = 0; j < currentUsers.length; j++) {
+        if (currentUsers[j] === newUserName) {
+            isDuplicate = true;
+            break;
+        }
+    }
+    if (isDuplicate) {
+        console.log("The username ".concat(newUserName, " is already taken"));
+    }
+    else {
+        console.log("the username ".concat(newUserName, " is available"));
+    }
+}
+// 33.
+var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+for (var i = 0; i < numbers.length; i++) {
+    var number = numbers[i];
+    var ordinal = void 0;
+    if (number === 1) {
+        ordinal = "st";
+    }
+    else if (number === 2) {
+        ordinal = "nd";
+    }
+    else if (number === 3) {
+        ordinal = "rd";
+    }
+    else {
+        ordinal = "th";
+    }
+    console.log(number + ordinal);
+}
+// 34.
+var fvrtPizza = ["perpperoni", "fajita", "bbq"];
+for (var i = 0; i < fvrtPizza.length; i++) {
+    var pizza = fvrtPizza[i];
+    console.log("i like ".concat(pizza, " pizza"));
+}
+console.log("i like the pizza");
+// 35.
+var animals = ["dog", "cat", "rabbit"];
+for (var i = 0; i < animals.length; i++) {
+    var animal = animals[i];
+    console.log("".concat(animal, " is a great pet"));
+}
+console.log("any of these animals, make a great poet");
+// 36.
+function makeShirt(size, message) {
+    console.log("shirt size is ".concat(size, " and the message is ").concat(message));
+}
+makeShirt('S', "hello world");
+// 37.
+function makeShirtl(size, message) {
+    if (size === void 0) { size = "L"; }
+    if (message === void 0) { message = "i love typescript"; }
+    console.log("the shirt size is ".concat(size, " and the message is ").concat(message));
+}
+makeShirtl();
+makeShirtl("medium");
+makeShirtl("medium", "hello javascript");
+// 38.
+function describeCity(city, country) {
+    if (city === void 0) { city = "lahore"; }
+    if (country === void 0) { country = "pakistan"; }
+    console.log("".concat(city, " is in ").concat(country));
+}
+describeCity("multan", "pakistan");
+describeCity("karachi", "pakistan");
+describeCity("islamabad", "pakistan");
+// 39.
+function cityCountry(city, country) {
+    return "".concat(city, ",").concat(country);
+}
+console.log(cityCountry("lahore", "pakistan"));
+console.log(cityCountry("islamabad", "pakistan"));
+// 40.

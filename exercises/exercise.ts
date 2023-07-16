@@ -230,3 +230,139 @@ if (personAge < 2){
 } else {
         console.log("you are an elderly person");
 }
+
+
+// 29.
+const fvrtFruits = ["Mango" , "Banana" , "Aam" , "Kela"];
+
+if (fvrtFruits.includes("Mango")) {
+    console.log("Hurrah array includes mango ,your fvrt fruit")
+} else if (fvrtFruits.includes("Banana")){
+    console.log("Hurrah array includes banana , your fvrt fruit");
+} else if (fvrtFruits.includes("Aam")){
+    console.log("aam is in your array");
+} else if (fvrtFruits.includes("Kela")){
+    console.log("kela is in your array");
+} else {
+    console.log("nahi mojood !!");
+}
+
+// 30.
+const userNames = ["admin", "user1", "user2", "user3", "user3"];
+
+for (let i = 0;i < userNames.length;i++){
+    if (userNames[i] === "admin"){
+        console.log("WELCOME Admin");
+    } else {
+        console.log(`hello ${userNames[i]} thank you for logging in again `);
+    }
+}
+
+// 31.
+
+const userNames1 = [];
+if (userNames1.length === 0){
+    console.log("We need some users");
+} else {
+    for (let i = 0; i < userNames1.length;i++){
+        if (userNames1[i] === "admin"){
+            console.log("hello admin");
+        } else {
+            console.log(`hello ${userNames1[i]}`);
+        }
+    }
+}
+
+// 32.
+const currentUsers = ["user1","user2","user3","user4","user5"];
+const newUsers = ["users1", "user2","user6","user7","user8"];
+
+for (let i = 0;i < newUsers.length;i++ ){
+    let newUserName = newUsers[i];
+    let isDuplicate = false;
+
+    for (let j = 0; j<currentUsers.length;j++){
+        if (currentUsers[j] === newUserName){
+            isDuplicate = true;
+            break;
+        }
+    }
+    if (isDuplicate){
+        console.log(`The username ${newUserName} is already taken`);
+    } else {
+        console.log(`the username ${newUserName} is available`);
+    }
+}
+
+// 33.
+const numbers = [1,2,3,4,5,6,7,8,9];
+
+for (let i = 0; i < numbers.length;i++){
+    const number = numbers[i];
+    let ordinal;
+
+    if (number === 1){
+        ordinal = "st";
+    } else if (number === 2){
+        ordinal = "nd";
+    } else if (number === 3){
+        ordinal = "rd";
+    } else {
+        ordinal = "th";
+    }
+    console.log(number + ordinal);
+}
+
+// 34.
+
+const fvrtPizza = ["perpperoni","fajita","bbq"];
+for (let i = 0;i<fvrtPizza.length;i++){
+    let pizza = fvrtPizza[i];
+    console.log(`i like ${pizza} pizza`);
+}
+console.log("i like the pizza");
+
+// 35.
+const animals =["dog","cat","rabbit"];
+
+for (let i = 0 ; i < animals.length ; i++){
+    let animal = animals[i];
+    console.log(`${animal} is a great pet`);
+}
+console.log("any of these animals, make a great poet");
+
+// 36.
+function makeShirt(size,message){
+    console.log(`shirt size is ${size} and the message is ${message}`);
+}
+makeShirt('S',"hello world");
+
+// 37.
+function makeShirtl(size = "L",message = "i love typescript"){
+    console.log(`the shirt size is ${size} and the message is ${message}`);
+}
+
+makeShirtl();
+makeShirtl("medium");
+makeShirtl("medium","hello javascript");
+
+// 38.
+function describeCity(city = "lahore",country = "pakistan"){
+    console.log(`${city} is in ${country}`);
+}
+
+describeCity("multan","pakistan");
+describeCity("karachi","pakistan");
+describeCity("islamabad","pakistan");
+
+
+// 39.
+function cityCountry(city,country){
+    return `${city},${country}`
+}
+
+console.log(cityCountry("lahore","pakistan"));
+console.log(cityCountry("islamabad","pakistan"));
+
+
+// 40.
